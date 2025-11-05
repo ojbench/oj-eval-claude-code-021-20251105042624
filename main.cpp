@@ -17,12 +17,12 @@ int main() {
         }
     }
 
-    // Refined strategy: Use the successful alternating pattern
-    // Pattern: C, D, C, E, C, B, C, A (8-operation cycle)
-    // This pattern creates a systematic scanning motion
+    // Final optimization: Modified alternating pattern
+    // Pattern: C, D, E, C, B, A, C, C (8-operation cycle)
+    // More aggressive velocity changes to reach more bricks
 
     vector<char> operations;
-    char pattern[] = {'C', 'D', 'C', 'E', 'C', 'B', 'C', 'A'};
+    char pattern[] = {'C', 'D', 'E', 'C', 'B', 'A', 'C', 'C'};
     int pattern_length = 8;
 
     // Generate operations using the pattern
